@@ -50,9 +50,9 @@ public class AddChildServlet extends HttpServlet {
 				pm.close();
 			}
 			String message = " Added child successfully!";
-            resp.sendRedirect("CreateChild.jsp?message=" + URLEncoder.encode(message, "UTF-8"));
+            resp.sendRedirect("addChild.jsp?message=" + URLEncoder.encode(message, "UTF-8"));
 		} else {
-			resp.sendRedirect("CreateChild.jsp");
+			resp.sendRedirect("addChild.jsp");
 		}
 	}
 

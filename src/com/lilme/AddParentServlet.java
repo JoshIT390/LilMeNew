@@ -43,9 +43,9 @@ public class AddParentServlet extends HttpServlet {
 			finally{
 				pm.close();
 			}
-			resp.sendRedirect("CreateParent.jsp");
+			resp.sendRedirect("addParent.jsp");
 		} else {
-			resp.sendRedirect("CreateParent.jsp");
+			resp.sendRedirect("addParent.jsp");
 		}
 	}
 

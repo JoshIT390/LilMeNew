@@ -35,14 +35,17 @@ public class AddBookServlet extends HttpServlet {
 			finally{
 				pm.close();
 			}
-			resp.sendRedirect("CreateBook.jsp");
+			resp.sendRedirect("addBook.jsp");
 		} else {
-			resp.sendRedirect("CreateBook.jsp");
+			resp.sendRedirect("addBook.jsp");
 		}
 	}
 
 	public boolean isEmpty(String[] s){
 		boolean isEmpty = false;
+		for (int a = 0; a < s.length; a++){
+			System.out.print(s[a]);
+		}
 		for (int i=0; i<s.length; i++) {
 			if (s[i].equals("") || s[i] == null) {
 				isEmpty = true;
